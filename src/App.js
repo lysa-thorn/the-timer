@@ -1,25 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './App.css';
+import React, { Component } from 'react';
+// import bootstrap
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '../node_modules/bootstrap/dist/js/bootstrap.min.js';
+
+
+import Header from './components/Header';
+import Home from './components/Home';
+import About from './components/About';
+import Contact from './components/Contact';
+import NoPage from './components/NoPage';
+import Login from './components/Login';
+import Register from './components/Register';
+import Feedback from './components/Feedback';
+import Detail from './components/Detail';
+import List from './components/List';
+import Footer from './components/Footer';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+
+class App extends Component {
+  render() {
+      return (
+        <>
+          <BrowserRouter>
+            <Header />
+            <Routes>
+              <Route path='/' element={<Home />} />
+              <Route path="about" element={<About />} />
+              <Route path="login" element={<Login />} />
+              <Route path="register" element={<Register />} />
+              <Route path="feedback" element={<Feedback />} />
+              <Route path="detail" element={<Detail />} />
+              <Route path="list" element={<List />} />
+              <Route path="contact" element={<Contact />} />
+              <Route path="*" element={<NoPage />} />
+            </Routes>
+            <Footer />
+            {/* <Routes>
+                <Route path="login" element={<Login />} />
+                <Route path="register" element={<Register />} />>} />
+            </Routes> */}
+          </BrowserRouter>
+        </>
+      );
+  }
 }
 
 export default App;
