@@ -73,11 +73,13 @@ export default class Contact extends Component {
                                 <div className="single-input-field">
                                 <textarea  placeholder="Write Your Message" name="message"></textarea>
                                 </div>
+                                <div className="single-input-fieldsbtn">
+                                <input type="submit" className='btn btn-primary' value="Send Now"/>
+                            </div>  
                             </div>                                                
-                            <div className="single-input-fieldsbtn">
-                                <input type="submit" value="Send Now"/>
-                            </div>                          
+                                                    
                             </div>
+                            
                             </form>   
                         </div>      
                         </div>
