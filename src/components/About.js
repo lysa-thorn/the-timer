@@ -8,33 +8,36 @@ export default class About extends Component {
                 <section className='about-page'>
                     <section className="introduction">
                         <div className="starcontainer">
-                            <h2>About me</h2>
+                            <h2>About Us</h2>
                             <i className="fa fa-star fa-2x"></i>
                             <hr className="star"></hr>
                         </div>
-                            <p>I am a Front End developer who believes in making the internet a better place. I currently work at Picspotr as a Web Developer/Design intern, Vice President of LatinosinHigherEd, and a freelancer in The Greater New Haven Area. Yes I wear many hats. </p>
-
-                            <p>It is my passion to conceptualize, develop, and deploy ideas to this great environment we call the internet. I am an advocate for Higher Education advancement and when I set my goals I sink my teeth into them. </p>
+                        <p>
+                            The idea for the site came about because people were often asking for advice about which watch they should buy. The more this happened — and it happened a lot — the more we realized that searching for a watch online is a minefield of information.
+                            The individual brand websites are great, but there are hundreds of watch brands in Switzerland alone, so checking out each page individually would take you weeks, and that’s if you know the names of all the brands.
+                            There is nowhere you can really search for all the new watches on the planet, compare models, check prices, and discover new brands all in the same place. That is, until now!
+                        </p>
                     </section>
 
                     <section className="location">
-                        <h1>Where I am From</h1>
-                        <p>I was born in the Bronx raised in Spanish Harlem and currently reside in Naugatuck CT.</p>
+                        <h1>The Watch Search</h1>
+                        <p>
+                            The Watch Pages features over 150 brands and thousands and thousands of watches (and it is growing every week). If you are a newbie to our industry, searching for a watch is as simple as finding a vacation home on Airbnb,
+                            you just choose your preferences in our filters and let our search find you the perfect watch. And if you are a bit of an expert, you can have a lot of fun with our advanced filters and search watch functions and complications to your heart’s content.
+                            In addition to the most advanced watch database you will find, the website also includes numerous articles to give you ideas, to help you make the right purchase and discover more about the wonders of watches.
+                        </p>
                     </section>
 
-                    <section className="questions">
-                        <h1>More About Me</h1>
-                        <h2>What is important to you?</h2>
-                        <p>Aside from my family education is extremely important to me and has always been a huge component of my growth.</p>
-                        <h2>What are your favorite hobbies?</h2>
-                        <p>I enjoy playing Ice Hockey. I'm a huge wrestling fan and love attending Wrestle Mania. I also enjoy trying new Vegan foods and traveling.</p>
-                        <h2>What is your dream job?</h2>
-                        <p>I'd love to take my new freelance career and turn it into a fullt-time gig.</p>
-                        <h2>What music have you been listening to lately?</h2>
-                        <p>I've been listening to the Focus playlist on Spotify.</p>
+                    <section className="location">
+                        <h1>The Founders</h1>
+                            <p>
+                            Susanne Samuelsson and Aaron Pitts started this website over two years ago and it has been quite the journey. We really hope you enjoy exploring and researching the perfect watch for yourself or a loved one. The journey is often as fun as the purchase.
+                            </p>
                     </section>
                 </section>
             </>
         );
     }
 }
+
+
